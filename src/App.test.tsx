@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { ReactFlowProvider } from 'reactflow'; 
 
 // Mock ResizeObserver
 beforeAll(() => {
@@ -12,7 +13,12 @@ beforeAll(() => {
 });
 
 test('renders welcome message', () => {
-  render(<App />);
+  render(
+    <ReactFlowProvider>
+      <App />
+    </ReactFlowProvider>
+  );
   const headingElement = screen.getByText(/welcome to react flow/i);
   expect(headingElement).toBeInTheDocument();
 });
+
