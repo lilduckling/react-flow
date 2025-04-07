@@ -1,6 +1,6 @@
 import React from "react";
 import Workflow from "./WorkFlow";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   return (
