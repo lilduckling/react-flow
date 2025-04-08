@@ -2,6 +2,8 @@
 
 This project is a workflow editor built using [React Flow](https://reactflow.dev/). It allows users to create and manage workflows with custom nodes, edges, and dynamic interactions.
 
+![Sample UI](./src/assets/images/Ui.png)
+
 ## Features
 
 - **Custom Nodes**: Includes "Action Nodes," "If / Else Nodes," and "Branch Nodes."
